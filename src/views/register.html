@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,200&family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/forms.css">
+    <script src="https://kit.fontawesome.com/174776519f.js" crossorigin="anonymous"></script>
+    <title>Registrate</title>
+</head>
+    <body>
+        <header>
+            <section class="main-header-top-bar">
+                <a href="./">
+                    <img src="/img/logo-mercado-liebre.svg" class="logo">
+                </a>
+                <div class="search">
+                    <input
+                        type="search"
+                        name="searchPrd"
+                        id="searchPrd"
+                        placeholder="Buscar productos, marcas"
+                    />
+                    <i class="fas fa-search"></i>
+                </div>
+                <p class="copy-header">
+                    <i class="icon-top fa-solid fa-hand-holding-dollar"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </p>
+            </section>           
+            <div class="hamburguer-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="main-navbar">
+                <ul class="left-navbar">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="right-navbar">
+                    <li>
+                        <a href="./register">
+                            Creá tu cuenta
+                            <i class="fa-regular fa-address-card"></i>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="./login">
+                            Ingresá
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Mis compras
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a> 
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="/">
+                <div class="form-field">
+                    <div class="data">
+                        <label for="name" class="requiredlabel">Nombre y apellido</label>
+                        <input type="text" name="name" id="name" required pattern="[\w\s]+">
+                    </div>
+                    <div class="validation">
+                        <span>
+                            Debe contener solo caracteres alfanuméricos
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="data">
+                        <label for="user" class="requiredlabel">Nombre de usuario</label>
+                        <input type="text" name="user" id="user" required pattern="[\w]+">
+                    </div>
+                    <div class="validation">
+                        <span>
+                            Debe contener solo caracteres alfanuméricos, sin espacios
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="data">
+                        <label for="date" class="requiredlabel">Fecha de nacimiento</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="validation">
+                        <span>
+                            Seleccionar una fecha válida
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="data">
+                        <label for="adress" class="requiredlabel">Domicilio</label>
+                        <input type="text" name="adress" id="adress" required>
+                    </div>
+                    <div class="validation">
+                        <span>
+                            Agregar un domicilio válido
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="data">
+                        <label id="userprofile" class="labelTag" required>Perfil de usuario</label>
+                        <select name="userprofile">
+                            <option value="comprador">Comprador</option>
+                            <option value="vendedor">Vendedor</option>
+                        </select>
+                    </div>
+                    <div class="validation">
+                        <span>
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="data-checkbox">
+                        <label class="labelTag">Intereses</label>
+                        
+                        <input type="checkbox" name="electro" id="electro">
+                        <label for="electro">Electro</label>
+
+                        <input type="checkbox" name="moda" id="moda">
+                        <label for="moda">Moda</label>
+                        
+                        <input type="checkbox" name="hogar" id="hogar">
+                        <label for="hogar">Hogar</label>
+                        
+                        <input type="checkbox" name="jugueteria" id="jugueteria">
+                        <label for="jugueteria">Jugueteria</label>
+                        
+                        <input type="checkbox" name="vidaSana" id="vidaSana">
+                        <label for="vidaSana">Vida sana</label>
+                    </div>
+                    <div class="validation">
+                        <span>
+                            Selecciona tus intereses
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="data">
+                        <label id="user-img">
+                            <i class="fa-sharp fa-solid fa-file-arrow-up"></i>
+                            <input type="file" name="user-img" id="user-img" accept="image/png, image/jpg">
+                        </label>
+                        <label class="labelTag">Subir avatar</label>
+                    </div>
+                    <div class="validation">
+                        <span>
+                            
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="data">
+                        <label for="password" class="requiredlabel">Contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="validation">
+                        <span>
+                            Ingresar una contraseña válida
+                        </span>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="data">
+                        <label for="confirm-password" class="requiredlabel">Confirmar contraseña</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                    <div class="validation">
+                        <span>
+                            Las contraseñas no coinciden
+                        </span>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="reset">Eliminar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <section>
+                <div>
+                    <i class="fa-solid fa-credit-card icons" style="color: #03264c;"></i>
+                    <h3>
+                        Pagá con tarjeta o en efectivo
+                    </h3>
+                    <p>
+                        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gift icons" style="color: #03264c;"></i>
+                    <h3>
+                        Envío gratis desde $ 2.500
+                    </h3>
+                    <p>
+                        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-shield icons" style="color: #03264c;"></i>
+                    <h3>
+                        Seguridad, de principio a fin
+                    </h3>
+                    <p>
+                        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Copyright © 1999-2020 MercadoLiebre S.R.L.
+                    </p>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

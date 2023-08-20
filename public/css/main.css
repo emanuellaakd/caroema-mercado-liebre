@@ -1,0 +1,90 @@
+main{
+    background-color: #ebebeb;
+    margin: auto;
+    padding: 24px;
+}
+main section{
+    display: flex;
+    flex-wrap: wrap;
+}
+main section h2{
+    width: 100%;
+    padding: 30px 7px 10px;
+}
+article{
+    margin: 7px;
+}
+
+
+
+.cost{
+    display: flex;
+    width: 100%;
+}
+.prices{
+    padding-right: 7px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.discounts{
+    color: #39b54a;
+    width: calc(100% - 7px);
+    font-size: 16px;
+}
+.description{
+    font-size: 16px;
+    display: none;
+}
+.products{
+    border-top: 1px solid #ebebeb;
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+}
+.products i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    color: #39b54a;
+    background-color: #fff;
+    top: -15px;
+    position: absolute;
+    right: 20px;
+}
+
+@media(min-width: 481px){
+    .description{
+        display: block;
+    }
+    main section article {
+        width: calc(50% - 14px);
+    }
+}
+@media(min-width: 769px){
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article{
+        width: calc(25% - 14px);
+    }
+
+    .products{
+        height: 6em;
+    }
+    .products i:hover{
+        transform: rotate(-90deg);
+    }
+    .products i:hover{
+        
+        transition: transform 500ms;
+    }
+    .description{
+        opacity: 0;
+    }
+
+    
+}
