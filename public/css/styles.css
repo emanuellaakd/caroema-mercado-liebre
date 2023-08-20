@@ -7,9 +7,18 @@ ul {
 body {
     font-family: "Roboto";
     
-}
+}    
+    
+
+  
+
+ 
+    
+
+  
 
 .bg-yellow {
+
     background-color: #eac926;
     
 }
@@ -42,9 +51,7 @@ margin-right: auto;
 
 }
 
-.mb-10 {
-    margin-bottom: 10px;
-}
+
 
 .bt-1 {
     border-top-style: solid;
